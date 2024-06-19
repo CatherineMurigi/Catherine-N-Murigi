@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrative Support</title>
+    <link rel="stylesheet" href="style-services.css">
+    <script src="https://kit.fontawesome.com/e019046ace.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#header"><img src="pic/Katie.png" class="logo"></a>
+      </nav>
+    </header>
+    <div id="service">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-2">
+            <h1 class="sub-title">Administrative Support</h1>
+            <p class="subtext1">Hello, I’m Catherine.<br>
+              <br>A dedicated individual with a passion for growing brands online.  With 6 years of experience in entrepreneurship 
+              and digital marketing, I bring a wealth of knowledge and creativity to every project I undertake.
+              <br> 
+              <br>I started my profession as a <strong>Business Consultant</strong>, where I [describe a significant 
+              achievement or learning experience]. Since then, I’ve had the privilege of working with entrepreneurs, refining my 
+              expertise in <em>online business and social media marketing</em>.<br><br>
+              I thrive on challenges and constantly set goals for myself, striving for excellence in everything I do. My approach is 
+              driven by [Your Personal Philosophy or Belief Related to Your Work], which ensures that I deliver innovative and effective 
+              solutions tailored to meet my clients' needs.<br><br>So, whether I am providing your business with general 
+              administrative services or even specialty services such as <em>Squarespace website design or course creation</em>, 
+              I am always thinking about customer’s experience! <br></p>
+               <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Services</p>
+                <p class="tab-links" onclick="opentab('experience')">Skills</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Social Media Management</span><br>Social media scheduling & management.</li>
+                  <li><span>Web Development</span><br>Designing & Developing Websites</li>
+                  <li><span>Content Creation</span><br>Creating social media content and blog post</li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2024 - Current</span><br>Web Designer, freelance</li>
+                  <li><span>2022 - 2023</span><br>Executive Assistant at Upwork</li>
+                  <li><span>2017 - 2022</span><br>Business Consultant at TechnoServe</li>
+                </ul>
+               </div>
+          </div>
+          <div class="about-col-1">
+            <img src="pic/admin.png">
+            <a href="index.html#services" class="back">Take Me Back</a>
+          </div>
+        </div>
+      </div>
+        <!-----------------contact-------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title2">Contact Me</h1>
+            <div class="social-icons">
+              <a href=mailto:"njericatherine03@gmail.com" target="_blank"><i class="fa-brands fa-google"></i></a>
+              <a href="https://www.instagram.com/katiedigitalhub/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://x.com/KatieMurigi" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://github.com/CatherineMurigi" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/catherine-murigi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="https://docs.google.com/document/d/13En6h8kMgEm7CthqZ4olV2MCAYtuyy5kTXxJMQW7Wes/edit?usp=sharing" download target="_blank" class="btn btn2">See My Resume</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2024 By Catherine Murigi</p>
+      </div>
+    </div>
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+  </body>
+</html>
